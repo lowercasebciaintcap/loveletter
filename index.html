@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For You 💕</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd6e8, #fff0f7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Georgia", serif;
+}
+
+.envelope-container {
+  position: relative;
+  width: 320px;
+  height: 220px;
+  cursor: pointer;
+}
+
+.envelope {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ff9fc9;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(255, 105, 180, 0.35);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 3px dashed #fff;
+  border-radius: 15px;
+}
+
+.envelope span {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+.paper {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: #fffafc;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transform: translateY(140px);
+  opacity: 0;
+  transition: all 0.8s ease;
+  z-index: 1;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.paper.show {
+  transform: translateY(-240px);
+  opacity: 1;
+}
+
+.paper h2 {
+  text-align: center;
+  color: #c4006a;
+  margin-top: 0;
+}
+
+.paper p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4a0030;
+}
+
+.heart {
+  text-align: center;
+  font-size: 26px;
+  margin-top: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="envelope-container" onclick="openLetter()">
+  <div class="envelope">
+    <span>💌 Click Me</span>
+  </div>
+
+  <div class="paper" id="letter">
+    <h2>Dear Hassan,</h2>
+
+    <p>
+      I’m so glad I met you and that you are a part of my life. I will forever be grateful for you, because you are genuinely my favorite person ever, and I love you so much.
+    </p>
+
+    <p>
+      It’s so crazy how close we became in such a short time. My day always starts and ends with talking to you, and it feels so incomplete and restless when I don’t.
+    </p>
+
+    <p>
+      It started off as something so silly, and it feels crazy to say this, but I genuinely thought, “Oh my God, I want to marry him,” after only a few weeks of knowing you. I think it’s because of how immediately we connected.
+    </p>
+
+    <p>
+      I used to make so much dua for whoever I would end up with — for them to have certain attributes and for me to just imm
