@@ -16,7 +16,6 @@
     margin: 0;
   }
 
-  /* Envelope */
   .envelope {
     width: 260px;
     height: 180px;
@@ -32,7 +31,6 @@
     transform: scale(1.05);
   }
 
-  /* Lace top */
   .lace {
     position: absolute;
     top: -25px;
@@ -43,7 +41,6 @@
     border-radius: 12px 12px 0 0;
   }
 
-  /* Heart seal */
   .heart {
     position: absolute;
     bottom: 25px;
@@ -52,7 +49,6 @@
     font-size: 40px;
   }
 
-  /* Letter */
   .letter {
     position: absolute;
     width: 340px;
@@ -138,10 +134,16 @@
   <div class="signature">— Yours</div>
 </div>
 
+<!-- 🎵 BACKGROUND SONG -->
+<audio id="loveSong" src="song.mp3"></audio>
+
 <script>
   function openLetter() {
     document.querySelector('.envelope').style.display = 'none';
     document.getElementById('letter').style.display = 'block';
+
+    // play song
+    document.getElementById('loveSong').play();
   }
 </script>
 
